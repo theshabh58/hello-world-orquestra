@@ -2,7 +2,7 @@ spec:
   templates:
   
   # name of the template used as refrence in a workflow -- Required field!
-  - name: welcome-to-orquestra-rp
+  - name: hw-orquestra-rp
     
     # generic-task is the supertemplate that all templates inherit from
     parent: generic-task
@@ -22,7 +22,7 @@ spec:
       raw:
         data: |
           from orquestra import welcome
-          welcome()
+          welcomeMsg()
     
     # this is where the artifacts are listed, otherwise it will get deleted when the template completes.
     outputs:
