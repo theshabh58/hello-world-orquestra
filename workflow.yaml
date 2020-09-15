@@ -47,9 +47,9 @@ spec:
   - name: salutations
     steps:
 
-    # This template runs the `welcome-to-orquestra` template in the `hello-world` resource
+    # This template runs the `hello-world` template in the `hello-world` resource
     - - name: greeting
-        template: welcome-to-orquestra
+        template: hello-world
         arguments:
           parameters:
           - resources: [hello-world]
