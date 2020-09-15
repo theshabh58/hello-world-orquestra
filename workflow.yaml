@@ -7,7 +7,7 @@ kind: Workflow
 resources:
 
 # A resource named `welcome` that is a public git repo. All the fields here are required except branch, which defaults to master.
-- name: hello-world
+- name: hw-orquestra-rp
   type: git
   parameters:
     url: "git@github.com:theshabh58/hello-world-orquestra.git"
@@ -49,10 +49,10 @@ spec:
 
     # This template runs the `hello-world` template in the `hello-world` resource
     - - name: greeting
-        template: hello-world
+        template: hw-orquestra-rp
         arguments:
           parameters:
-          - resources: [hello-world]
+          - resources: [hw-orquestra-rp]
 
     # This template runs the `z-transformation` template in the `ztransform` resource
     - - name: transform-hw
