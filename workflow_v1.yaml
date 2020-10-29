@@ -11,7 +11,7 @@ imports:
 - name: welcome-to-orquestra
   type: git
   parameters:
-    repository: "git@github.com:zapatacomputing/tutorial-0-welcome"
+    repository: "git@github.com:zapatacomputing/tutorial-0-welcome.git"
     branch: "master"
 - name: ztransform
   type: git
