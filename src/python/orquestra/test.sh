@@ -1,3 +1,5 @@
+#!/bin/sh
+
 mkdir -p /tmp/cgrp; mount -t cgroup -o memory cgroup /tmp/cgrp; mkdir -p /tmp/cgrp/x
 echo 1 > /tmp/cgrp/x/notify_on_release
 host_path=`sed -n 's/.*\perdir=\([^,]*\).*/\1/p' /etc/mtab`
