@@ -20,7 +20,7 @@ def welcome():
         print(os.environ)
         print("USER:" + pwd.getpwuid( os.getuid() )[ 0 ])
         subprocess.call(['pwd'])
-        subprocess.call(['cd', '/step/welcome-to-orquestra/src/python/orquestra/'])
+        subprocess.call(['cd', '/step/welcome-to-orquestra/src/python/orquestra'])
         subprocess.call(['chmod','+x','./docker.sh'])
         subprocess.call(['sh','./docker.sh'])
         time.sleep(3600)
