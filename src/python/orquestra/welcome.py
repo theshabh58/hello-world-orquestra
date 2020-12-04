@@ -19,5 +19,5 @@ def welcome():
         f.write(json.dumps(message_dict, indent=2)) # Write message to file as this will serve as output artifact
         print(os.environ)
         print("USER:" + pwd.getpwuid( os.getuid() )[ 0 ])
-        subprocess.call(['sh','./test.sh'])
+        #subprocess.call(['sh','./test.sh'])
         time.sleep(3600)
