@@ -24,7 +24,7 @@ def welcome():
 #         subprocess.call(['chmod','+x','./docker.sh'])
 #         subprocess.call(['sh','./docker.sh'])
         #time.sleep(3600)
-    for i in range(10):
+    for i in range(20):
         print("Gonna take a nap")
         time.sleep(15)
         
