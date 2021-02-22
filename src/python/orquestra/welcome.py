@@ -23,4 +23,8 @@ def welcome():
 #         subprocess.call(['cd', '/step/welcome-to-orquestra/src/python/orquestra'])
 #         subprocess.call(['chmod','+x','./docker.sh'])
 #         subprocess.call(['sh','./docker.sh'])
-        time.sleep(3600)
+        #time.sleep(3600)
+    for i in range(10):
+        print("Gonna take a nap")
+        time.sleep(15)
+        
