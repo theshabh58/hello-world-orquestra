@@ -8,7 +8,7 @@ import os
 import pwd
 import subprocess
 
-def welcome():
+def nope():
     message = "Hello World from Orquestra!"
 
     message_dict = {}
