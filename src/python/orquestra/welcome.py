@@ -8,7 +8,7 @@ import os
 import pwd
 import subprocess
 
-def nope():
+def welcome():
     message = "Hello World from Orquestra!"
 
     message_dict = {}
@@ -26,5 +26,8 @@ def nope():
         #time.sleep(3600)
     for i in range(5):
         print("Gonna take a nap")
+        if i == 4:
+            raise ValueError('A very specific bad thing happened here. I like me some errors')
+        
         time.sleep(2)
         
