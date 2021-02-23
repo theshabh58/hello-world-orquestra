@@ -26,5 +26,5 @@ def welcome():
         #time.sleep(3600)
     for i in range(10):
         print("Gonna take a nap")
-        time.sleep(10)
+        time.sleep(2)
         
