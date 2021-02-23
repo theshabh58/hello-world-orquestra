@@ -24,10 +24,10 @@ def welcome():
 #         subprocess.call(['chmod','+x','./docker.sh'])
 #         subprocess.call(['sh','./docker.sh'])
         #time.sleep(3600)
-    for i in range(20):
+    for i in range(3):
         print("Gonna take a nap")
 #         if i == 4:
 #             raise Exception('A very specific bad thing happened here. I like me some errors')
         
-        time.sleep(10)
+        time.sleep(2)
         
