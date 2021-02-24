@@ -25,7 +25,7 @@ def welcome():
 #         subprocess.call(['sh','./docker.sh'])
         #time.sleep(3600)
     for i in range(15):
-        print("Gonna take a nap")
+        print(f"Gonna take a nap {i}")
         if i == 14:
             raise Exception('A very specific bad thing happened here. I like me some errors')
         
