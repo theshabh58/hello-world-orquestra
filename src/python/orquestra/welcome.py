@@ -29,5 +29,5 @@ def welcome():
         if i == 14:
             raise Exception('A very specific bad thing happened here. I like me some errors')
         
-        time.sleep(10)
+        time.sleep(4)
         
