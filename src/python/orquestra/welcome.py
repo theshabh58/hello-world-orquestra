@@ -26,8 +26,8 @@ def welcome():
         #time.sleep(3600)
     for i in range(15):
         print(f"Gonna take a nap {i}")
-        if i == 14:
-            raise Exception('A very specific bad thing happened here. I like me some errors')
+#         if i == 14:
+#             raise Exception('A very specific bad thing happened here. I like me some errors')
         
-        time.sleep(4)
+        time.sleep(5)
         
