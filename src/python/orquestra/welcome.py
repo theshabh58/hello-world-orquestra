@@ -21,9 +21,10 @@ def welcome():
         print("USER:" + pwd.getpwuid( os.getuid() )[ 0 ])
         subprocess.call(['pwd'])
         #time.sleep(3600)
-    for i in range(1000):
+    for i in range(100):
         print(f"Break {i}")
-        for j in range(1000):
+        for j in range(100):
+            time.sleep(10)
             print(f"From Break: {i} - Dancing: {j}")
             
     print('''
