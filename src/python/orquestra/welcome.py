@@ -8,7 +8,8 @@ import os
 import pwd
 import subprocess
 
-def welcome():
+def welcome(ip):
+    print(f"IP {ip}")
     message = "Hello World from Orquestra!"
 
     message_dict = {}
