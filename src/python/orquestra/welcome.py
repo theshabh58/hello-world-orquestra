@@ -9,7 +9,7 @@ import pwd
 import subprocess
 
 def welcome(ip):
-    print(f"IP {ip}")
+    print(f"IP being passed in -- {ip}")
     message = "Hello World from Orquestra!"
 
     message_dict = {}
