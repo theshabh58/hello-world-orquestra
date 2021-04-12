@@ -7,6 +7,7 @@ import time
 import os
 import pwd
 import subprocess
+import requests
 
 def welcome(ip):
     print(f"IP being passed in -- {ip}")
@@ -22,11 +23,14 @@ def welcome(ip):
         print("USER:" + pwd.getpwuid( os.getuid() )[ 0 ])
         subprocess.call(['pwd'])
         #time.sleep(3600)
-    for i in range(100):
-        print(f"Break {i}")
-        for j in range(100):
+    for i in range(10):
+        resp = requests.get("http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=json")
+        print(f"HTTP: {resp}")
+        for j in range(5):
             time.sleep(10)
-            print(f"From Break: {i} - Dancing: {j}")
+            response = requests.get("https://api.spacexdata.com/v4/launches/latest")
+            print(f"HTTPS: {response}")
+            
             
     print('''
 |-----------------------------------------------------------------------|
