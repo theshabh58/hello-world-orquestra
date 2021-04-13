@@ -23,7 +23,7 @@ def welcome():
         subprocess.call(['pwd'])
         #time.sleep(3600)
     for i in range(10):
-        resp = requests.get("http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=json")
+        resp = requests.get("https://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=json")
         print(f"HTTP: {resp}")
         for j in range(5):
             time.sleep(0.1)
