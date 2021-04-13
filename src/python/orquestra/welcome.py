@@ -26,7 +26,7 @@ def welcome():
         resp = requests.get("http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=json")
         print(f"HTTP: {resp}")
         for j in range(5):
-            time.sleep(10)
+            time.sleep(0.1)
             response = requests.get("https://api.spacexdata.com/v4/launches/latest")
             print(f"HTTPS: {response}")
             
