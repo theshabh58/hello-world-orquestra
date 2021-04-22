@@ -9,9 +9,9 @@ import pwd
 import subprocess
 import requests
 
-def welcome(*args):
+def welcome(**kwargs):
     message = "Hello World from Orquestra!"
-    print("Args:", args)
+    print("Args:", kwargs)
     message_dict = {}
     message_dict["message"] = message
     message_dict["schema"] = "message"
