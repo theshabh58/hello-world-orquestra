@@ -11,7 +11,6 @@ import requests
 
 def welcome():
     message = "Hello World from Orquestra!"
-    print("Args:", ref_artifact_1, ref_artifact_2)
     message_dict = {}
     message_dict["message"] = message
     message_dict["schema"] = "message"
