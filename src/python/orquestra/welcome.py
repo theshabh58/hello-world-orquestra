@@ -9,7 +9,7 @@ import pwd
 import subprocess
 import requests
 
-def welcome(ref_artifact_1, ref_artifact_2):
+def welcome():
     message = "Hello World from Orquestra!"
     print("Args:", ref_artifact_1, ref_artifact_2)
     message_dict = {}
